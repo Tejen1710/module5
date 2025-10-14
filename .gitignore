@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.dist/
+build/
+.eggs/
+
+# Virtual env
+.venv/
+venv/
+
+# Coverage / pytest
+.coverage
+coverage.xml
+htmlcov/
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# Local data / history
+history.csv
+
+# OS
+.DS_Store
+Thumbs.db
