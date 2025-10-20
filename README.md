@@ -1,5 +1,6 @@
 
 # Enhanced Calculator (Module 5)
+![CI Status](https://github.com/Tejen1710/module5/actions/workflows/python-app.yml/badge.svg)
 
 A modular CLI calculator using **Strategy**, **Factory**, **Observer**, **Memento**, and a **Calculator Facade**.  
 History is stored in **pandas** and auto-saved to **CSV**.  
