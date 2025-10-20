@@ -3,12 +3,12 @@
 A modular CLI calculator using Strategy, Factory, Observer, Memento, and a Calculator Facade. History stored in pandas and auto-saved to CSV. Fully tested with `pytest` and enforced 100% coverage via CI.
 
 ## Quickstart
-```bash
+'''
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 cp .env.example .env
-python -m app.calculator_repl
+python -m app.calculator_repl'''
 Commands
 • calc <a> <op> <b> ops: + - * / ^ root
 • history show persisted history
