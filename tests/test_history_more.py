@@ -1,4 +1,3 @@
-import pandas as pd
 from app.history import History
 
 class FakeCalc:
@@ -7,7 +6,8 @@ class FakeCalc:
 
 def test_history_append_and_replace(tmp_path):
     p = tmp_path / "h.csv"
-    h = History(str(p)); h.load()
+    h = History(str(p))
+    h.load()
     h.append(FakeCalc(2, "+", 3, 5))
     h.append(FakeCalc(9, "root", 2, 3))
     assert p.exists()

@@ -1,6 +1,5 @@
 from __future__ import annotations
 from dataclasses import dataclass
-from typing import Any
 from .operations import Operation, make_operation
 
 @dataclass(frozen=True)

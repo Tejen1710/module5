@@ -1,4 +1,4 @@
-import builtins, os
+import builtins
 from app.calculator_repl import run
 
 class FakeIn:

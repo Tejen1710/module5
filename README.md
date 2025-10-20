@@ -75,6 +75,10 @@ git init -b main
 git add .
 git commit -m "feat: initial scaffold for Module 5"
 git remote add origin https://github.com/your_github_username/enhanced-calculator.git
+<<<<<<< HEAD
 git push -u origin main
 ## 📄 License
 MIT License
+=======
+git push -u origin main
+>>>>>>> b52bfd8 (chore: save local changes)

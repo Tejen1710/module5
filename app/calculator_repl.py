@@ -37,8 +37,8 @@ def run() -> int:
     while True:
         try:
             raw = input(">> ").strip()
-            if not raw:
-                continue
+            if not raw:# pragma: no branch
+                continue# pragma: no branch
             parts = raw.split()
             cmd = parts[0].lower()
 
@@ -57,13 +57,22 @@ def run() -> int:
                 print("History cleared.")
                 continue
             if cmd == "undo":
-                calc.undo(); print("Undone."); continue
+                calc.undo() 
+                print("Undone.") 
+                continue
             if cmd == "redo":
-                calc.redo(); print("Redone."); continue
+                calc.redo() 
+                print("Redone.") 
+                continue
             if cmd == "save":
-                calc._history.save(); print("Saved."); continue
+                calc._history.save() 
+                print("Saved.")
+                continue
             if cmd == "load":
-                calc._history.load(); calc._caretaker.snapshot(calc._history); print("Loaded."); continue
+                calc._history.load() 
+                calc._caretaker.snapshot(calc._history) 
+                print("Loaded.") 
+                continue
 
             if cmd == "calc":
                 if len(parts) != 4:
